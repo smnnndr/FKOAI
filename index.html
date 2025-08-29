@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth" style="scroll-padding-top:2rem;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Ferencvárosi Komplex Óvoda, Általános Iskola és Egységes Gyógypedagógiai Módszertani Intézmény</title>
+  <script src="https://cdn.tailwindcss.com"></script>    
+  <style>
+    .outlined-text {
+      color: white;             /* belseje átlátszó */
+      -webkit-text-stroke: 2px darkgreen; /* körvonal vastagsága és színe */
+    }
+	.outlined-text2 {
+      color: white;             /* belseje átlátszó */
+      -webkit-text-stroke: 1px darkgreen; /* körvonal vastagsága és színe */
+    }
+  </style>
+</head>
+<!--body class="bg-gray-50 text-gray-800"-->
+<body class="bg-repeat" style="background-image: url('image1156.gif'); background-size: 100px 100px;">
+<!-- Navigáció -->
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">    
+    <nav class="hidden md:flex space-x-6">      
+      <a href="#bemutatkozas" class="text-gray-200 font-bold hover:text-gray-300">Bemutatkozunk</a>
+	  <a href="#intezmeny" class="text-gray-200 font-bold hover:text-gray-300">Intézményünk<a>
+      <a href="https://fkoai.hu/vezeto.htm" class="text-gray-200 font-bold hover:text-gray-300">Vezetőség</a>
+      <a href="https://kk.gov.hu/delpest" class="text-gray-200 font-bold hover:text-gray-300">Fenntartó</a>
+      <a href="#" class="text-gray-200 font-bold hover:text-gray-300">Dokumentumok</a>
+      <a href="#" class="text-gray-200 font-bold hover:text-gray-300">Étkezés</a>	  
+      <a href="https://fkoai.hu/Alapitvany/alapitvany.htm" class="text-gray-200 font-bold hover:text-gray-300">Alapítvány</a>      
+      <a href="#" class="text-gray-200 font-bold hover:text-gray-300">Szülőknek</a>
+	      <!-- Facebook ikon -->
+      <a href="https://www.facebook.com/profile.php?id=100063752902509" target="_blank" class="text-gray-200 hover:text-gray-300">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             fill="currentColor" viewBox="0 0 24 24" 
+             class="w-6 h-6">
+          <path d="M22.675 0h-21.35C.596 0 0 .596 0 
+          1.325v21.351C0 23.404.596 24 1.325 
+          24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 
+          1.893-4.788 4.659-4.788 1.325 0 2.463.099 
+          2.795.143v3.24h-1.918c-1.505 
+          0-1.797.716-1.797 1.767v2.317h3.594l-.468 
+          3.622h-3.126V24h6.127C23.404 24 24 
+          23.404 24 22.676V1.325C24 .596 23.404 
+          0 22.675 0z"/>
+        </svg>
+      </a>
+	  <a href="https://klik038417001.e-kreta.hu/Adminisztracio/Login" target="_blank" class="text-gray-200 hover:text-gray-300">
+		<img src="kreta_feher.png" alt="Kréta" class="w-12 md:w-15">
+	  </a>
+    </nav>
+    <button class="md:hidden p-2 text-gray-200" id="menu-btn">☰</button>
+  </div>
+<!-- Mobil menü -->
+  <div class="hidden flex-col space-y-2 p-4 bg-gray-800 md:hidden" id="mobile-menu">    
+    <a href="#bemutatkozas" class="text-gray-200 hover:text-gray-300">|Bemutatkozunk|</a>
+	<a href="#intezmeny" class="text-gray-200 hover:text-gray-300">|Intézményünk|<a>
+    <a href="https://fkoai.hu/vezeto.htm" class="text-gray-200 hover:text-gray-300">|Vezetőség|</a>
+    <a href="https://kk.gov.hu/delpest" class="text-gray-200 hover:text-gray-300">|Fenntartó|</a>
+    <a href="#" class="text-gray-200 hover:text-gray-300">|Dokumentumok|</a>
+    <a href="#" class="text-gray-200 hover:text-gray-300">|Étkezés|</a>
+    <a href="https://fkoai.hu/Alapitvany/alapitvany.htm" class="text-gray-200 hover:text-gray-300">|Alapítvány|</a>    
+    <a href="#intezmeny" class="text-gray-200 hover:text-gray-300">|Szülőknek|</a>
+    <a href="https://www.facebook.com/profile.php?id=100063752902509" target="_blank" class="text-gray-200 hover:text-gray-300">|Facebook|</a>	
+	<a href="https://klik038417001.e-kreta.hu/Adminisztracio/Login" target="_blank" class="text-gray-200 hover:text-gray-300">|Kréta|</a>
+	<a href="#" class="text-gray-200 hover:text-gray-300">|Szülőknek|</a>
+  </div>
+</header>
+
+
+<!-- Hero szekció -->
+<section class="bg-green-600 text-white py-10 px-2">
+<!--section class="bg-repeat" style="background-image: url('back.png'); background-size: 200px 150px; py-10 px-2"-->
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-6 max-w-7xl mx-auto">
+    
+    <!-- Logo -->
+    <div class="shrink-0 min-w-[80px]">
+      <img src="Logo.png" alt="FKOAI logo" class="w-32 md:w-40">
+    </div>
+    
+    <!-- Szöveg -->
+    <div class="text-center md:text-center">
+      <!--h1 class="text-3xl md:text-5xl font-bold mb-4"-->
+	  <h1 class="outlined-text text-5xl font-bold">
+        Ferencvárosi Komplex Óvoda, Általános Iskola és Egységes Gyógypedagógiai Módszertani Intézmény
+      </h1>
+	  <h2 class="outlined-text2 text-2xl font-bold py-2">
+	    1095 Budapest, IX. Gát utca 6
+	  </h2>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Tartalmi szekciók -->
+<section id="bemutatkozas" class="py-16 px-6 flex justify-center">
+  <div class="bg-white shadow rounded-2xl p-8 max-w-4xl w-full">
+    
+    <p class="text-green-600 text-center text-xl font-bold mb-4">Tisztelt Látogatónk!</p>
+    <p class="text-green-600 text-center text-lg font-bold mb-4">Köszöntöm honlapunkon!</p>
+    
+    <p class="text-green-600 mb-4 text-justify">
+      Intézményünk – mindhárom feladatellátási helyén — sajátos nevelési igényű gyermekek óvodai és általános iskolai nevelését, oktatását ellátó többcélú gyógypedagógiai nevelési-oktatási intézmény.
+    </p>
+    <p class="text-green-600 mb-4 text-justify">
+      Székhelyünk, Középső-Ferencvárosban, a Gát utcában, József Attila Emlékmúzeummal szemben található, jellegzetes téglaépület, mely szervesen összeépült a mellette lévő Kaníziusz Szent Péter templommal. Itt - 1964 óta – 8 osztályos gyógypedagógiai általános iskola működik.
+    </p>
+    <p class="text-green-600 mb-4 text-justify">
+      Székhelyünkön kívül két telephelyen dolgozunk. A Gát utcához közel lévő autista munkaközösségünk a Thaly Kálmán utcában, óvodai intézményegységünk kissé távolabb, a Vágóhíd utcában fejleszti a hozzánk járó gyermekeket.
+    </p>
+    <p class="text-green-600 mb-4 text-justify">
+      2011-től székhelyünkhöz kapcsoltan, utazó gyógypedagógusi hálózatot is működtetünk. A hálózat munkatársai Ferencváros többségi iskoláiba integrált, sajátos nevelési igényű, illetve beszédfogyatékos gyermeket látják el.
+    </p>
+    <p class="text-green-600 mb-4 text-justify">
+      Honlapunkon intézményünk sokrétű tevékenységét, szolgáltatásainkat szeretnénk bemutatni Önöknek. Kollégáink elhivatottsága, magas szakmai tudása garancia arra, hogy a hozzánk kerülő gyerekek egyénre szabott, a szakértői véleményben javasolt fejlesztést, képzést kapják. Célunk, hogy az otthoni, családi nevelést megtámogatva, segítve, a szülőkkel együtt, partnerként teremtsünk a gyerekek számára gyermekközpontú, kölcsönös tiszteleten alapuló, boldog iskolás éveket.
+    </p>
+    <p class="text-green-600 mb-4 text-justify">
+      Ebben segít intézményünk alapítványa, a Tündöklő Fénysugár Alapítvány is, mely olyan esetekben ad anyagi segítséget programjaink végrehajtásához, eszközeink beszerzéséhez, amikor erre más forrást nem találunk. Kérjük, ha lehet, segítsék munkánkat, adójuk 1 %-val!
+    </p>
+	<p class="text-green-600 mb-4 text-justify">
+	  <span class="font-bold">Adószámunk: 18066287-1-43</span>
+	</p>
+	<div class="flex justify-between mb-4">
+	  <p class="text-green-600 text-right">Budapest, 2024. február 01.</p>           	
+	  <div class="text-green-600 text-right">
+        <p>Kovács József István</p>
+        <p>igazgató</p>
+      </div>
+	  <!--p class="text-green-600 text-left"><table><tr><td>Kovács József István</td></tr><tr><td><c>igazgató</c></td></tr></table></p-->	  
+	</div>  
+
+  </div>
+</section>
+
+<section  id="intezmeny" class="max-w-7xl mx-auto py-6 px-6 grid md:grid-cols-3 gap-8 text-green-600">
+  
+  <!-- Iskola blokk -->
+  <div class="bg-green-100 shadow rounded-2xl p-6">
+    <h2 class="text-xl font-bold mb-4">Iskola</h2>
+    <div class="bg-white shadow rounded-2xl p-6 mb-4">
+      <h3 class="text-lg font-bold mb-2"><a href="https://fkoai.hu/Tagozatok/Suli/iskola.htm" class="text-green-500 font-bold hover:text-green-600">Iskolai tagozat</a></h3>
+         <p>
+		   <a href="https://www.google.com/maps/search/?api=1&query=1095+Budapest,+Gát+utca+6" target="_blank" class="text-green-500 hover:text-green-600 underline">1095 Budapest, Gát utca 6</a>
+		 </p>         
+		 <div class="grid grid-cols-[auto,1fr] gap-4 text-green-600">		
+			  <div>Tel./Fax:</div>			  
+			  <div class="flex flex-col">
+			    <span>+36(1)210-0323</span>
+			    <span>+36(30)205-0464</span>
+			  </div>
+		 </div>
+         <p>Email: <a href="mailto:egymi@delpest-tk.hu" class="text-green-500 hover:text-green-600">egymi@delpest-tk.hu</a></p>
+    </div>
+    <div class="bg-white shadow rounded-2xl p-6">
+      <h3 class="text-lg font-bold mb-2"><a href="https://fkoai.hu/Tagozatok/Autista/index.html" class="text-green-500 font-bold hover:text-green-600">Autista tagozat</a></h3>
+         <p>
+		   <a href="https://www.google.com/maps/search/?api=1&query=1095+Budapest,+Thaly+Kálmán+utca+17" target="_blank" class="text-green-500 hover:text-green-600 underline">1095 Budapest, Thaly Kálmán utca 17.</a>
+		 </p>
+         <p>Telefon: +36(1)219-0344</p>
+         <p>Email: <a href="mailto:egymi@delpest-tk.hu" class="text-green-500 hover:text-green-600">egymi@delpest-tk.hu</a></p>
+    </div>
+  </div>
+
+  <!-- Óvoda blokk -->
+  <div class="bg-white shadow rounded-2xl p-6">
+    <h2 class="text-xl font-bold mb-4"><a href="https://fkoai.hu/Tagozatok/Ovi/ovoda.htm" class="text-green-500 font-bold hover:text-green-600">Óvoda</a></h2>
+         <p>
+		   <a href="https://www.google.com/maps/search/?api=1&query=1097+Budapest,+Vágóhíd+utca+35" target="_blank" class="text-green-500 hover:text-green-600 underline">1097 Budapest, Vágóhíd utca 35.</a>
+		 </p>         
+		 <div class="grid grid-cols-[auto,1fr] gap-4 text-green-600">		
+			  <div>Telefon:</div>			  
+			  <div class="flex flex-col">
+			    <span>+36(1)219-0216</span>
+			    <span>+36(30)205-0437</span>
+			  </div>
+		 </div>		 
+         <p>Email: <a href="mailto:egymi@delpest-tk.hu" class="text-green-500 hover:text-green-600">egymi@delpest-tk.hu</a></p>
+  </div>
+
+  <!-- Utazó pedagógusok blokk -->
+  <div class="bg-white shadow rounded-2xl p-6">
+    <h2 class="text-xl font-bold mb-4"><a href="https://fkoai.hu/Tagozatok/Utazo/utazo.htm" class="text-green-500 font-bold hover:text-green-600">Utazó pedagógusok</a></h2>
+		<p>Email: <a href="mailto:egymi@delpest-tk.hu" class="text-green-500 hover:text-green-600">egymi@delpest-tk.hu</a></p>
+  </div>
+</section>
+  
+<section  id="intezmeny" class="max-w-7xl mx-auto py-1 px-6 grid gap-8 text-green-600 text-center">
+  <h2 class="text-xl font-bold mb-4">Felvételi körzetünk: <a href="https://www.ferencvaros.hu/" class="text-green-500 hover:text-green-600">Budapest IX. kerülete</a></h2>
+</section>
+
+<section id="linkek" class="bg-green-400 mx-auto py-6 px-6 grid gap-8 text-gray-800 text-center">
+  
+  <div class="flex justify-center gap-8">
+    
+	  <a href="https://fkoai.hu/Program.pdf" target="_blank" class="text-gray-200 hover:text-gray-300">
+		<!--img src="Program.jpg"  alt="Program" class="w-12 md:w-15"-->
+		<img border=0 width=132 height=150 src="Program.jpg" alt="Vezetői program">
+	  </a>
+
+  </div>  
+</section> 
+
+<!-- Google Maps beágyazás -->
+<section class="w-full h-96">
+  <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.4908441480246!2d19.070144676427267!3d47.48235827117635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc41a0a66a0d%3A0xd7e6a472a3e7f85a!2sBudapest%2C%20G%C3%A1t%20u.%206%2C%201093!5e0!3m2!1shu!2shu!4v1735555555555" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="bg-gray-900 mx-auto py-2 px-6 grid md:grid-cols-3 gap-8 text-gray-200">
+    <div class="grid grid-cols-[auto,1fr] gap-4 text-gray-200">		
+      <div> </div>			  
+	  <div class="flex flex-col">
+	    <span> </span>
+	    <span> </span>
+	  </div>
+	</div>
+</section>
+
+<!-- Lábléc -->
+<footer class="bg-black text-gray-300 text-center py-6">
+  <p>&copy;2025</p>
+</footer>
+
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</html>
